@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+
+    <!-- tailwind & daisuy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/7a93a7bff1.js" crossorigin="anonymous"></script>
+
+    <!--google  font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/congo.png" type="image/x-icon">
+</head>
+<style>
+    .underline {
+        text-decoration: underline;
+    }
+
+    .work-sans {
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    .head-color {
+        color: #111;
+    }
+
+    .para-color {
+        color: rgba(17, 17, 17, 0.50);
+    }
+
+    hr {
+        width: 100px;
+        border-color: rgba(18, 18, 18, 0.59);
+        border-width: 1px;
+        text-align: right;
+    }
+
+    /* #purchase-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    } */
+
+    #purchase-button.enabled {
+        background-color: #E527B2;
+        color: white;
+    }
+
+    #purchase-button.disabled {
+        background-color: #e527b261;
+        color: gray;
+        cursor: not-allowed;
+    }
+
+    #apply-button.enabled {
+        background-color: #E527B2;
+        color: white;
+    }
+
+    #aplly-button.disabled {
+        background-color: #e527b261;
+        color: gray;
+        cursor: not-allowed;
+    }
+
+
+    /* .btn:hover {
+    background-color: #f85559; 
+    cursor: pointer;
+    color: white;
+} */
+</style>
+
+<body class="work-sans">
+    <!-- header start here -->
+    <header class="max-w-screen-xl  mx-auto ">
+
+        <!-- benner section -->
+        <section
+            class="benner flex flex-col-reverse md:flex-row lg:flex-row justify-around items-center bg-[#F9F6E2] py-4 md:py-8 lg-py-24">
+            <div class="benner-title space-y-6 text-center">
+                <p class="text-xl head-color">---SALE FEVER---</p>
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold head-color">Purchase TK 200 or <br> above & get
+                    <span class="text-[#E527B2]">20% off</span>
+                </h1>
+                <p>
+                    <span class="head-color text-sm lg:text-xl ">Use Promo Code</span>
+                    <button class="py-1 px-4 font-semibold rounded-md bg-[#E527B2] text-white ">SELL200</button>
+                </p>
+            </div>
+            <div class="benner-image">
+                <img class="w-[150px] md:w-[200px] lg:w-[450px] " src="images/Summer 1.png" alt="">
+            </div>
+        </section>
+    </header>
+    <!-- header end here -->
+
+    <main class="max-w-screen-xl mx-auto px-4 md:px-8 lg-px-24 mt-6 md:mt-10 lg:mt-20 bg-[#F8F8F8]">
+        <!-- main strats here -->
+        <!-- product section -->
+        <section class="product ">
+            <div class="flex  flex-col justify-center items-center lg:items-start lg:flex-row md:gap-8 gap-6">
+
+                <div class=" Kitchenware">
+                    <!-- Kitchenware -->
+                    <h1 class="text-4xl text-center md:text-start lg:text-start font-semibold head-color my-10">
+                        Kitchenware</h1>
+                    <div class="grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                        <!-- product- 1 -->
+                        <div onclick="handleClick(this)" class="card w-72 bg-white cursor-pointer">
+                            <figure class="px-10 pt-10 m-5 bg-[#F8F8F8]">
+                                <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                </div>
+                                <h2 class="card-title">K. Spoon</h2>
+                                <p class="para-color">39.00TK</p>
+                            </div>
+                        </div>
+                        <!-- product- 2 -->
+                        <div onclick="handleClick(this)" class="card w-72 bg-white cursor-pointer">
+                            <figure class="px-10 pt-10 m-5 bg-[#F8F8F8]">
+                                <img src="/images/prod2.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                </div>
+                                <h2 class="card-title">K. Accessories</h2>
+                                <p class="para-color">25.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- product-3 -->
+                        <div onclick="handleClick(this)" class="card w-72 bg-white cursor-pointer">
+                            <figure class="px-10 pt-10 m-5 bg-[#F8F8F8]">
+                                <img src="/images/prod3.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                </div>
+                                <h2 class="card-title">Home Cooker</h2>
+                                <p class="para-color">49.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sportswear -->
+                    <h1 class="text-4xl text-center md:text-start lg:text-start font-semibold head-color my-10">
+                        Sportswear</h1>
+                    <div class="grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- product- 4 -->
+                        <div onclick="handleClick(this)" class="card w-72 bg-white cursor-pointer">
+                            <figure class="px-10 pt-10 m-5 bg-[#F8F8F8]">
+                                <img src="/images/prod4.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                </div>
+                                <h2 class="card-title">Sports Back Cap</h2>
+                                <p class="para-color">39.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- product- 5 -->
+                        <div onclick="handleClick(this)" class="card w-72 bg-white cursor-pointer">
+                            <figure class="px-10 pt-10 m-5 bg-[#F8F8F8]">
+                                <img src="/images/prod5.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                </div>
+                                <h2 class="card-title">Full Jersey Set</h2>
+                                <p class="para-color">25.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- product-6 -->
+                        <div onclick="handleClick(this)" class="card w-72 bg-white cursor-pointer">
+                            <figure class="px-10 pt-10 m-5 bg-[#F8F8F8]">
+                                <img src="/images/prod6.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                </div>
+                                <h2 class="card-title">Sports cates</h2>
+                                <p class="para-color">49.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Furniture -->
+                    <h1 class="text-4xl text-center md:text-start lg:text-start font-semibold head-color my-10">
+                        Furniture</h1>
+                    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- product- 7 -->
+
+                        <!-- product- 8 -->
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- Total -->
+                <div class="grid justify-center mt-20">
+                    <div>
+                        <h3 class="text-xl font-semibold head-color text-center mb-4">Have Coupon?</h3>
+                        <p class="flex   flex-col md:flex-row ">
+                            <input id="cupon-field" class="mb-3 py-2 px-4 font-semibold outline-none" type="text"
+                                placeholder="Coupon code">
+                            <button disabled id="apply-button" onclick="applyCupon()"
+                                class="py-2 px-4 font-semibold rounded-md bg-[#e527b261] text-white ">Apply</button>
+                        </p>
+                    </div>
+                    <div class="mt-16 space-y-8">
+                        <!-- Selected items -->
+                        <div id="slected-tiem" class="mb-6">
+                            <h2 class="text-xl text-center font-semibold underline mb-2">Selactet item</h2>
+                        </div>
+                        <p class="   text-xl font-semibold">Total Price: <span id="total-price" class="para-color"> 00
+                            </span> <span class="para-color">TK</span></p>
+                        <p class=" text-xl  font-semibold">Discount: <span id="discount-amount" class="para-color"> 00 </span>
+                            <span class="para-color">TK</span>
+                        </p>
+                        <p class="mb-5 text-xl  font-semibold">Total: <span id="total" class="para-color"> 00 </span>
+                            <span class="para-color">TK</span>
+                        </p>
+                        <button disabled onclick="my_modal_5.showModal()" id="purchase-button"
+                            class="w-full py-3 px-4 font-semibold rounded-md bg-[#e527b261] text-white">Make
+                            Purchase</button>
+                        <dialog id="my_modal_5" class="modal modal-middle sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <img class="mx-auto" src="images/congo.png" alt="">
+                                <h3 class="head-color font-bold text-lg text-center">Congratulations</h3>
+                                <p class="py-4 text-center">Your Purchase the product</p>
+                                <div class="modal-action">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button
+                                        onclick="goHome(this)" class="mx-auto py-3 px-4 font-semibold rounded-md bg-[#E527B2] text-white">Go
+                                        Home</button>
+                                </div>
+                            </form>
+                        </dialog>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- main ends here -->
+
+
+
+    <br><br><br>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
