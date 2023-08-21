@@ -1,5 +1,4 @@
 
-
 let totalPrice = 0;
 function handleClick(target) {
 
