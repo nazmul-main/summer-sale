@@ -1,3 +1,5 @@
+
+
 let totalPrice = 0;
 function handleClick(target) {
 
@@ -70,8 +72,7 @@ function goHome(target) {
     document.getElementById('discount-amount').innerText = '00';
     document.getElementById('total').innerText = '00';
     document.getElementById('cupon-felid').value = '00';
-
-
+    
 }
 
 
