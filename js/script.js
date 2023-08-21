@@ -1,12 +1,14 @@
 let totalPrice = 0;
-function handleClick(target){
-    
-    const slectedTiemContainer = document.getElementById('slected-tiem');
+function handleClick(target) {
+
+    const selectedItemContainer = document.getElementById('slected-item');
     const itemName = target.childNodes[3].childNodes[3].innerText;
-    const p = document.createElement('p');
-    p.innerText = itemName;
-    // console.log(li);
-    slectedTiemContainer.appendChild(p);
+    const li = document.createElement('li');
+    li.innerText = itemName;
+    li.style.listStyleType = "decimal"; // Apply numbering style
+    li.style.fontSize = "20px"; // Apply numbering style
+    li.style.color = "#111"; // Apply numbering style
+    selectedItemContainer.appendChild(li);
 
 
     const totalPricevalue = target.childNodes[3].childNodes[5].innerText.split(' ')[0];
@@ -28,15 +30,15 @@ function handleClick(target){
         purchaseButton.classList.add('disabled');
         purchaseButton.disabled = true;
     }
-    
+
 
     const applyButton = document.getElementById('apply-button');
 
-    if(totalPrice >= 200){
+    if (totalPrice >= 200) {
         applyButton.classList.add('enabled')
         applyButton.disabled = false;
     }
-    else{
+    else {
         applyButton.classList.remove('enabled');
         applyButton.classList.add('disabled');
         applyButton.disabled = true;
@@ -61,14 +63,16 @@ function applyCupon() {
         alert("Invalid coupon code");
     }
 }
-function goHome(target){
-    document.getElementById('slected-tiem').innerHTML = '';
+function goHome(target) {
+
+    document.getElementById('slected-item').innerHTML = '';
     document.getElementById('total-price').innerText = '00';
     document.getElementById('discount-amount').innerText = '00';
     document.getElementById('total').innerText = '00';
+    document.getElementById('cupon-felid').value = '00';
+
+
 }
-
-
 
 
 
