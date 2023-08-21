@@ -65,13 +65,7 @@ function applyCupon() {
     }
 }
 function goHome(target) {
-
-    document.getElementById('slected-item').innerHTML = '';
-    document.getElementById('total-price').innerText = '00';
-    document.getElementById('discount-amount').innerText = '00';
-    document.getElementById('total').innerText = '00';
-    document.getElementById('cupon-felid').value = '00';
-    
+    window.location.reload();
 }
 
 
